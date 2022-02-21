@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata-Mosquito</title>
+    <link rel="stylesheet" href="stilo.css">
+    <script src="https://kit.fontawesome.com/e1fae4bd76.js" crossorigin="anonymous"></script>
+    <script src="jogo.js"></script>
+</head>
+<body onresize="tamanhoJogo()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" >
+            <img id="v2" src="imagens/coracao_cheio.png" >
+            <img id="v3" src="imagens/coracao_cheio.png" >
+        </div>
+        <div class="cronometro">Tempo restante:
+             <span id="cronometro"></span>
+
+             <button value="sound" onclick="togglePlay()" ><i class="fa-solid fa-music">
+                 <audio id="audio"  autoplay loop src="sons/background-music.mp3">
+                 </audio>
+             </i>    
+             </button>
+            
+        </div>
+        
+        </div>
+    
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+        
+
+        var criarMosca = setInterval(function(){
+            posiçoesRandom()
+        }, baseTempo )
+    </script>
+    
+</body>
+</html>
