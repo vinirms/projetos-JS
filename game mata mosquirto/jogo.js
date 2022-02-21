@@ -3,7 +3,7 @@
     var altura = 0
     var largura = 0
     var vidas = 1
-    var tempo = 10
+    var tempo = 60
 
     var baseTempo = 2000
 
