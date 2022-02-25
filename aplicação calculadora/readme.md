@@ -1,0 +1,1 @@
+Esta aplicação foi também foi desenvolvida durante curso online de javascript como exercicio
